@@ -1,8 +1,13 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
 #welcome-section{
+
     background-image: url(/images/istockphoto-1337977426-170667a.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     color: rgb(255, 255, 255);
-    height: 4em;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,12 +19,39 @@
 }
 
 .nav{
-    position: fixed;
-    margin: 10px;
+    background-color: aquamarine;
     border: 2px sold rgba(0, green, blue, alpha);
+}
+
+.nav a{
+    display: inline-block;
+    color: brown;
+    text-decoration: none;
+    
 }
 
 .nav li{
     display: inline;
-    
+}
+
+.nav a:hover{
+    background-color: aliceblue(0,255,255 .8);
+}
+
+.section-header{
+    grid-area: header;
+    font-size: medium;
+}
+
+#footer a:hover{
+    background-color: aqua(255,255,255,0.8);
+}
+
+.main-footer{
+    /*posistion:*fixed;*/
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
 }

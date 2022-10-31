@@ -1,0 +1,23 @@
+// C++ code
+//function will only run once, after each powerup or reset of the
+//define imputs and outputs and start serial communication
+void setup()
+{
+  pinMode(A1, INPUT); //declare potensiometer as an input
+  pinMode(3, OUTPUT); //declare led as an output
+  
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int val = analogRead(A1);//save voltage value on pin A1 to variable val
+  
+  int nyVal = map(val,0,1023,0,255); //10-bit to 8_bit
+  analogWrite(3,nyVal);
+  Serial.print("val:");
+  Serial.println(val);
+  delay(100);
+}
+  
+  

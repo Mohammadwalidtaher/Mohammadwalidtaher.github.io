@@ -19,6 +19,8 @@ html, body{
 }
 
 .nav{
+    position: fixed;
+    width: 100%;
     background-color: aquamarine;
     border: 2px sold rgba(0, green, blue, alpha);
 }
@@ -36,6 +38,10 @@ html, body{
 
 .nav a:hover{
     background-color: aliceblue(0,255,255 .8);
+}
+
+.mainnav{
+
 }
 
 .section-header{
